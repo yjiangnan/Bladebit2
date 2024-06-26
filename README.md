@@ -1,5 +1,5 @@
 # Bladebit2
-An improved version of the Chia Bladebit plotter and harvester.
+An improved version of the Chia Bladebit plotter and harvester. The software here is not meant for production usage, but only to support the claim in discussion https://chiaforum.com/t/how-we-can-save-the-green-narrative-of-chia/22591 .
 
 This repo incudes a plotter `bladebit_cuda` that supports compression levels up to 12, and a harvester component embedded in `ProofOfSpace` that takes about 1/9 of the time to find a proof and finds 5% more proofs compared to the official software `ProofOfSpaceOfficial` compiled with timing enabled on Ubuntu 20.04.
 
