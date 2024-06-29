@@ -24,3 +24,11 @@ Run the following command to test the official version of `ProofOfSpace` (it is 
 ```
 This will only find 971 proofs for 1000 challenges with 22 failures and 28 exceptions (see end of file `log.official`). On average, each proof takes about 0.47 seconds to finish.
 
+To make plots with size 33.25GiB, run the following command:
+```
+./bladebit_cuda32 -n 1   --compress 16 -i 824871870ead30e476ea73701a189d061141455c7a9b9761671b19c74306514f \
+			-f b866264a2bcefe5f42ea5b267703f72e3f93e211c0af66e24beaf91bd21edcea49f75775f676db3e4828c9aab92d96c5 \
+			-p b85077391c9384fbc4d448dd78dbb4b1e7f48c85f8519483d80a1b9cac4ce4d2f33e970fc20596ca2358aeafa3594567 \
+			cudaplot ./
+```
+Depending on the hardware, this should output a plot in around 1min (excluding the time for initial memory allocation). Note: there is no harvester for it yet, since I switched focus when DrPlotter came out.
